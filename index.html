@@ -11,7 +11,7 @@
     <header class="bg-white shadow-md">
       <div class="container mx-auto flex justify-between items-center p-4">
         <div class="flex items-center space-x-2">
-          <img src="c2-assets/logo-header.png" alt="Logo-header" class="h-8" />
+          <img src="c2-assets/logo-header.png" alt="Logo-header" class="h-10" />
         </div>
         <nav class="hidden md:flex space-x-6">
           <a href="" class="text-[#111111] hover:text-red-700">Home</a>
@@ -19,14 +19,22 @@
           <a href="" class="text-[#111111] hover:text-red-700">Products</a>
           <a href="" class="text-[#111111] hover:text-red-700">Contact</a>
         </nav>
-        <div>
+        <div class="flex gap-5 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+</svg>
+
+
           <button
-            class="bg-[#179800] text-white px-8 py-3 rounded-md shadow-md hover:bg-green-700"
+            class="bg-[#179800] text-white px-7 py-3 rounded-md shadow-md hover:bg-green-700"
           >
             Login
           </button>
           <button
-            class="bg-[#FFFFFF]text-[##111111] px-8 py-3 rounded-md shadow-md hover:bg-green-700"
+            class="bg-[#FFFFFF]text-[##111111] px-7 py-3 rounded-md shadow-md hover:bg-green-700"
           >
             Register
           </button>
@@ -327,6 +335,7 @@
     </section>
 
     <!-- Newsletter Section -->
+     <section class="relative z-10 lg:ml-30 lg:mr-30 font-[Sora] mt-30 -mb-20 rounded-xl bg-white">
     <div class="-m-200 bg-gray-100">
       <div class="max-w-7xl mx-auto p-8">
         <div class="bg-white rounded-2xl shadow-lg flex items-center p-8">
@@ -355,49 +364,36 @@
           </div>
         </div>
       </div>
+    </section>
 
       <!-- Footer Section -->
-      <footer class="bg-[#179800] text-white py-10 -mt-40">
-        <div class="max-w-7xl mx-auto grid grid-cols-4 gap-8">
-          <!-- Brand Info -->
-          <div>
-            <img
-              src="c2-assets/logo-footer.png"
-              alt="Nature's Logo"
-              class="w-26 h-27 mb-4"
-            />
-            <p class="text-sm">
-              Discover a world of treats, toys, and essentials handpicked for
-              your furry friends. and descover more things into the website. to
-              get to know.
-            </p>
-          </div>
-
-          <!-- Product Links -->
-          <div>
-            <h3 class="font-bold mb-4">Product</h3>
-            <ul class="space-y-2 text-sm">
-              <li>Fresh Produce</li>
-              <li>Dairy</li>
-              <li>Snacks</li>
-              <li>Beverages</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="font-bold mb-4">Follow us</h3>
-            <div class="flex space-x-4 mt-4">
-              <img
-                src="c2-assets/facebook.jpg"
-                alt="Facebook"
-                class="w-7 h-7"
-              />
-              <img src="c2-assets/inta.jpg" alt="Insta" class="w-7 h-7" />
-              <img src="c2-assets/linkdin.png" alt="linkdin" class="w-7 h-7" />
-              <img src="c2-assets/youtube.png" alt="Y-Tube" class="w-7 h-7" />
+     <footer class="bg-[#179800] pt-20 pl-30 pr-30 font-[Sora] pb-18">
+            <div class="flex flex-col lg:flex-row justify-between">
+            <div class="flex flex-col gap-4">
+                <div class="flex gap-5 items-center">
+                    <img src="c2-assets/logo-footer.png" alt="footer-logo">
+                </div>
+                <div>
+                    <p class="w-80 h-20 opacity-[0.7] mb-5">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+                </div>
             </div>
-          </div>
+            <div class="mb-5">
+                <ul class="flex flex-col gap-4">
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact us</a></li>
+                  </ul>
+            </div>
+            <div class="flex flex-col gap-4 mt-8">
+                <p>Follow Us</p>
+                <div class="flex gap-4">
+                    <img class="w-8 h-8" src="c2-assets/facebook.png" alt="facebook-logo">
+                    <img class="w-8 h-8" src="c2-assets/insta.png" alt="instagram">
+                    <img class="w-8 h-8" src="c2-assets/linkdin.png" alt="Linkdin">
+                    <img class="w-8 h-8" src="c2-assets/youtube.png" alt="Youtube">
+                </div>
+            </div>
         </div>
-      </footer>
-    </div>
+        </footer>
   </body>
 </html>
